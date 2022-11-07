@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Makinos.Samples.AppServices", "Makinos.Samples.AppServices\Makinos.Samples.AppServices.csproj", "{88C38CAF-24B3-4FB4-A784-45263B983946}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Makinos.Samples.Models", "Makinos.Samples.Models\Makinos.Samples.Models.csproj", "{579C59F5-7F06-4A58-B124-5734002835C7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Makinos.Samples.BusinessAccessLayer", "Makinos.Samples.BusinessAccessLayer\Makinos.Samples.BusinessAccessLayer.csproj", "{2AC34136-DAD8-4D8E-A4A3-961EC65159D8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{58FC764B-2E54-43C4-A575-BDA4920DEF8C} = {58FC764B-2E54-43C4-A575-BDA4920DEF8C}
+		{579C59F5-7F06-4A58-B124-5734002835C7} = {579C59F5-7F06-4A58-B124-5734002835C7}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Makinos.Samples.DataAccessRepository", "Makinos.Samples.DataAccessRepository\Makinos.Samples.DataAccessRepository.csproj", "{58FC764B-2E54-43C4-A575-BDA4920DEF8C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{579C59F5-7F06-4A58-B124-5734002835C7} = {579C59F5-7F06-4A58-B124-5734002835C7}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Makinos.Samples.Web.UI", "Makinos.Samples.Web.UI\Makinos.Samples.Web.UI.csproj", "{3CBE0FE3-B355-44CF-A43A-F0674D5A06A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88C38CAF-24B3-4FB4-A784-45263B983946}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88C38CAF-24B3-4FB4-A784-45263B983946}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88C38CAF-24B3-4FB4-A784-45263B983946}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88C38CAF-24B3-4FB4-A784-45263B983946}.Release|Any CPU.Build.0 = Release|Any CPU
+		{579C59F5-7F06-4A58-B124-5734002835C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{579C59F5-7F06-4A58-B124-5734002835C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{579C59F5-7F06-4A58-B124-5734002835C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{579C59F5-7F06-4A58-B124-5734002835C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AC34136-DAD8-4D8E-A4A3-961EC65159D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AC34136-DAD8-4D8E-A4A3-961EC65159D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AC34136-DAD8-4D8E-A4A3-961EC65159D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AC34136-DAD8-4D8E-A4A3-961EC65159D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58FC764B-2E54-43C4-A575-BDA4920DEF8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58FC764B-2E54-43C4-A575-BDA4920DEF8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58FC764B-2E54-43C4-A575-BDA4920DEF8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58FC764B-2E54-43C4-A575-BDA4920DEF8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CBE0FE3-B355-44CF-A43A-F0674D5A06A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CBE0FE3-B355-44CF-A43A-F0674D5A06A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CBE0FE3-B355-44CF-A43A-F0674D5A06A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CBE0FE3-B355-44CF-A43A-F0674D5A06A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB3F74D3-2908-4211-B991-C502CD5A3E6C}
+	EndGlobalSection
+EndGlobal
